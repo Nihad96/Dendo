@@ -1,0 +1,126 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    background: #161616;
+    margin:auto;
+}
+
+.navbar_link {
+    padding:15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid #161616;
+}
+
+.navbar_link:hover {
+    color : #1AE5F1;
+    border-bottom: 2px solid #1AE5F1;
+    text-decoration: none !important;
+    color: white;
+}
+
+#icone_menu {
+    display:none;
+}
+
+.ouvrir_menu {
+    display: flex!important;
+}
+
+#icone_dendo {
+    width: 56px;
+    padding: 12px;
+    position: absolute;
+    cursor:pointer;
+}
+
+#header {
+    height: 80px;
+}
+
+#div_panier {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#div_panier img {
+    width: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#div_panier p {
+    position: absolute;
+    top: 12px;
+    right: -4px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 6px;
+    text-align: center;
+}
+
+/* mode tablette */
+
+@media screen and (max-width: 960px) {
+    #navbar {
+        flex-direction: column;
+        z-index: 1000;
+        margin-left: 0;
+        position: absolute;
+        top: 40px;
+        display: none;
+    }
+
+    #icone_menu {
+        display: block;
+        width: 40px;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        position: relative;
+        cursor:pointer;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #icone_dendo {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #div_panier {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    #navbar {
+        flex-direction: row;
+        margin: auto;
+        position: initial;
+        display: flex;
+    }
+
+    #icone_menu {
+        display: none;
+    }
+
+    #header {
+        flex-direction: row;
+    }
+}

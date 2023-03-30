@@ -1,0 +1,143 @@
+.cont_panier{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    padding-top: 1%;
+    overflow: auto;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 3%;
+}
+.cont_panier2{
+    width: calc(100% - 40px);
+    margin-left: 20px;
+}
+.panier{
+    background-color: white;
+    display: flex;
+    margin-bottom: 20px;
+    border: solid black;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.imagePanier{
+    width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.quantity{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: right;
+}
+.t_panier{
+    font-size: 25px;
+    margin-top: 1%;
+    color: black;
+}
+.panier_livraison{
+    margin-top: 2%;
+    background-color: #20738D;
+    cursor: pointer;
+
+}
+.cont_buy{
+    text-align: center;
+    
+}
+.delete_panier{
+    background-color: crimson;
+    width: 130px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.delete_panier:hover {
+    background: #bd1030;
+    color: white;
+}
+
+
+.text_panier{
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.total_buy{
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 10px;
+    position: fixed;
+    right: 40px;
+    width: fit-content;
+    padding: 20px;
+    top: 130px;
+    margin: auto;
+    height: fit-content;
+    color: white;
+    margin-bottom: 3%;
+}
+.cont_total{
+    text-align: center;
+    height: 50%;
+    padding-top: 5%;
+}
+.panier_vide{
+    color: white;
+}
+@media screen and (max-width: 1040px) {
+    .total_buy{
+        padding: 5px;
+        right: 3px;
+    }
+  }
+@media screen and (max-width: 900px) {
+    .cont_panier{
+        height: 65%;
+        width: 60%;
+    }
+    .total_buy{
+        margin-top: 3%;
+        width: 40%;
+        right: 0;
+        top: 0;
+        position:unset;
+        background-color: rgba(0,0,0,0.8);
+    }
+  }
+@media screen and (max-width: 600px) {
+
+    .total_buy{
+        margin-top: 3%;
+        width: 55%;
+        right: 0;
+        top: 0;
+        position:unset;
+    }
+    .cont_panier2{
+        width: 85%;
+        margin-left: 7%;
+    }
+    .t_panier{
+        font-size: 20px;
+    }
+    .quantity{
+        margin-top: 10%;
+    }
+    .cont_panier{
+        height: 65%;
+        width: 80%;
+    }
+  }
+  @media screen and (max-width: 300px) {
+      .imagePanier{
+          display: none;
+      }
+      .quantity{
+          text-align: center;
+      }
+  }
+ 
+  
